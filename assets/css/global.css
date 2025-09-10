@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    background: url('../images/bg.jpg') no-repeat top left;
+    width: 1964px;
+    margin: 0 auto;
+    height: 10323px;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+    color: #333;
+    font-size: 44px;
+}
