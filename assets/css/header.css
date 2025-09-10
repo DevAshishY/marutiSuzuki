@@ -1,81 +1,48 @@
-/* Header Styles */
 .header {
-    /* background: #fff; */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    padding: 0;
-    position: relative;
-    z-index: 10;
+    padding: 64px 0 55px;
+
+    .container {
+        max-width: 1865px;
+    }
+
+    nav.main-nav {
+        margin-left: 171px;
+
+        li {
+            margin: 0 72px;
+
+            a {
+                text-decoration: none;
+                color: #000;
+                font-weight: 500;
+                font-size: 24px;
+                transition: all 0.3s ease;
+            }
+        }
+    }
 }
 
-.header__container {
+
+
+.search-box {
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: -4px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 24px 40px 0 60px;
-    min-height: 70px;
-}
+    gap: 20px;
 
-.header__logo {
-    display: flex;
-    align-items: center;
-    margin-right: 48px;
-}
+    input {
+        width: 518px;
+        height: 46px;
+        border: 2px solid #32439B;
+        border-radius: 23px;
+    }
 
+    button {
+        position: relative;
+        top: -4px;
+        background: none;
+        border: none;
+    }
 
-
-.header__nav {
-    display: flex;
-    gap: 40px;
-    margin-right: auto;
-}
-
-.nav-link {
-    color: #232A85;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.nav-link:not(.active) {
-    color: #222;
-}
-
-.nav-link.active {
-    color: #232A85;
-    font-weight: bold;
-}
-
-.header__search {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-left: 40px;
-}
-
-.search-input {
-    border: 1px solid #232A85;
-    border-radius: 12px;
-    padding: 8px 16px;
-    font-size: 1rem;
-    outline: none;
-    width: 260px;
-    transition: border-color 0.2s;
-}
-
-.search-input:focus {
-    border-color: #0057b8;
-}
-
-.search-btn {
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.search-btn svg {
-    display: block;
 }
