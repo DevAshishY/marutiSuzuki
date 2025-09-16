@@ -32,22 +32,22 @@ h2 {
 }
 
 h3 {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 500;
     color: #fff;
     margin-bottom: 30px;
 }
 
 h4 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 500;
     color: #fff;
 
 }
 
 h5 {
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 500;
     color: #fff;
     margin-bottom: 10px;
 }
@@ -495,3 +495,5 @@ section#banner {
         background: #e5e5e5;
     }
 }
+
+
