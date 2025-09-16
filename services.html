@@ -9,9 +9,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets//css/footer.css">
+  <link rel="stylesheet" href="assets/css/flexslider.css" rel="stylesheet" type="text/css">
+
+  <!-- @Head -->
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        pausePlay: false,
+        mousewheel: false,
+        rtl: true,
+        nav: false
+
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -50,294 +72,218 @@
       </div>
     </header>
     <!-- Banner section end here -->
-    <section id="banner">
-      <ul>
+
+    <div class="flexslider" id="banner">
+      <ul class="slides">
         <li>
-          <img src="assets/images/banner1.png" alt="Banner" width="1920" height="1080">
+          <img src="assets/images/Banner-1.jpg" alt="Banner" width="2880" height="1620">
+        </li>
+
+        <li>
+          <img src="assets/images/Banner-2.jpg" alt="Banner" width="2880" height="1620">
+        </li>
+
+        <li>
+          <img src="assets/images/Banner-3.jpg" alt="Banner" width="2880" height="1620">
         </li>
       </ul>
-    </section>
-    <!----------------------------------------------- Common section start  here -------------------------------------------------------->
+    </div>
+
+
+    <!-- accordian format -->
+
+
+
     <!-- service initiation section start here -->
-    <section class="row blueBg">
+    <section class="row blueBg accordianFormat">
       <div class="container">
-        <h2>
-          SERVICE INITIATION
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Service Reminder & Followup
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              <a href="chapter.html">
-                <img src="assets/images/demo.png" alt="appointment" width="400" height="400">
-              </a>
+        <div class="accordion">
+          <!-- Section 2.1 -->
+          <div class="accordion-item">
+            <div class="accordion-header"> SERVICE INITIATION</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Service Reminder & Followup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    <a href="chapter.html">
+                      <img src="assets/images/demo.png" alt="appointment" width="400" height="400">
+                    </a>
 
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header"> VEHICLE RECEIVING</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Attending Vehicles <br>
+                    Through Pickup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    Receiving Customers <br>
+                    at Workshop
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="box">
+                    Job Card Opening
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-header"> VEHICLE RECEIVING</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Attending Vehicles <br>
+                    Through Pickup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    Receiving Customers <br>
+                    at Workshop
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="box">
+                    Job Card Opening
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header"> VEHICLE RECEIVING</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Attending Vehicles <br>
+                    Through Pickup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    Receiving Customers <br>
+                    at Workshop
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="box">
+                    Job Card Opening
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header"> VEHICLE RECEIVING</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Attending Vehicles <br>
+                    Through Pickup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    Receiving Customers <br>
+                    at Workshop
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="box">
+                    Job Card Opening
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header"> VEHICLE RECEIVING</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Attending Vehicles <br>
+                    Through Pickup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    Receiving Customers <br>
+                    at Workshop
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="box">
+                    Job Card Opening
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header"> VEHICLE RECEIVING</div>
+            <div class="accordion-content">
+              <div class="colCover">
+                <div class="col">
+                  <div class="box">
+                    Attending Vehicles <br>
+                    Through Pickup
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="box">
+                    Receiving Customers <br>
+                    at Workshop
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="box">
+                    Job Card Opening
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
 
     </section>
-    <!--  vechicle receivinng section start here  -->
-    <section class="row grayBg">
-      <div class="container">
-        <h2>
-          VEHICLE RECEIVING
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Attending Vehicles <br>
-              Through Pickup
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Receiving Customers <br>
-              at Workshop
-            </div>
-          </div>
 
-          <div class="col">
-            <div class="box">
-              Job Card Opening
-            </div>
-          </div>
-        </div>
-      </div>
 
-    </section>
+    <!----------------------------------------------- Common section start  here -------------------------------------------------------->
+
+
     <!-- VEHICLE RECEIVING section start here -->
-    <section class="row blueBg">
-      <div class="container">
-        <h2>
-          VEHICLE RECEIVING
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Vehicle Tracking on Shop Floor
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Spare Part Availability
-            </div>
-          </div>
 
-
-          <div class="col">
-            <div class="box">
-              Delay in Delivery & Holdup
-            </div>
-          </div>
-
-
-
-
-          <div class="col">
-            <div class="box">
-              Road Test & Final Inspection
-            </div>
-          </div>
-
-
-          <div class="col">
-            <div class="box">
-              Washing & Cleaning
-            </div>
-          </div>
-
-
-          <div class="col">
-            <div class="box">
-              Faster Vehicle Service <br>
-              through Specialised Bays
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-
-    </section>
-    <!--  VEHICLE DELIVERY section start here -->
-    <section class="row grayBg">
-      <div class="container">
-        <h2>
-          VEHICLE DELIVERY
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Job Card Closing <br>
-              & Work Explanation
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Feedback, Billing <br>
-              & Vehicle Delivery
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="box">
-              Vehicle Delivery through <br>
-              Dropping at Customer Location
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section>
-    <!-- PSF & COMPLAINT RESOLUTION section start here -->
-    <section class="row blueBg">
-      <div class="container">
-        <h2>
-          PSF & COMPLAINT RESOLUTION
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Post Service Feedback <br>
-              & Calibration
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Addressing PSF Complaints <br>
-              & Post Resolution Followup
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Attending Complaint <br>
-              Customers
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="box">
-              Repeat Job and <br>
-              Revisit Analysis
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CUSTOMER ENGAGEMENT ACTIVITIES section start here -->
-    <section class="row grayBg">
-      <div class="container">
-        <h2>
-          CUSTOMER ENGAGEMENT ACTIVITIES
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Extended Warranty & CCP Sale
-
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Marketing Campaigns
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- WARRANTY & TECHNICAL section start here -->
-    <section class="row blueBg">
-      <div class="container">
-        <h2>
-          WARRANTY & TECHNICAL
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Normal Warranty, <br>
-              Goodwill, Recall Campaign
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Extended Warranty
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Pre-Delivery Inspection <br>
-              for New Car Sale
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="box">
-              Field Technical Information <br>
-              Report (FTIR)
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Vehicle Diagnosis
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- CUSTOMER CONVENIENCE FACILITIES section start here -->
-    <section class="row grayBg">
-      <div class="container">
-        <h2>
-          CUSTOMER ENGAGEMENT ACTIVITIES
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Service On Wheels (SOW)
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              Road Side Assistance
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              EV Charging
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SAFETY & SECURITY start here -->
-    <section class="row blueBg">
-      <div class="container">
-        <h2>
-          SAFETY & SECURITY
-        </h2>
-        <div class="colCover">
-          <div class="col">
-            <div class="box">
-              Data & Cyber security
-            </div>
-          </div>
-          <div class="col">
-            <div class="box">
-              5S & Safety
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- footer start here -->
     <section class="footer-component">
       <footer class="footer">
@@ -462,6 +408,15 @@
       </div> -->
     </section>
   </div>
+  <script>
+    // Accordion Toggle Logic
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
 
   <body>
 

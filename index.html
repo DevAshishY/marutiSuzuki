@@ -59,9 +59,38 @@
       <!--  select role  -->
 
       <div class="select-role">
-        <a href="#" class="btn">SELECT YOUR ROLE</a>
-        <a href="services.html" class="btn">VISIT FULL WEBSITE</a>
+        <section class="">
+          <div class="container">
+            <div class="accordion">
+              <!-- Section 2.1 -->
+              <div class="accordion-item">
+                <div class="accordion-header">SELECT YOUR ROLE</div>
+                <div class="accordion-content">
+                  <a href="chapter-details.html">Service Marketing Reminder Executive (SMRE)</a>
+                  <a href="chapter-details.html">Role 2</a>
+                  <a href="chapter-details.html">Role 3</a>
+                  <a href="chapter-details.html">Role 4</a>
+                </div>
+              </div>
+
+
+
+              <!-- Section 2.3 -->
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <a href="services.html">VISIT FULL WEBSITE</a>
+
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </section>
       </div>
+
 
 
 
@@ -445,6 +474,15 @@
       </div> -->
     </section>
   </div>
+  <script>
+    // Accordion Toggle Logic
+    document.querySelectorAll('.accordion-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        parent.classList.toggle('active');
+      });
+    });
+  </script>
 
   <body>
 
