@@ -9,9 +9,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/flexslider.css" rel="stylesheet" type="text/css">
+
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/header.css">
   <link rel="stylesheet" href="assets//css/footer.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.6.3/jquery.flexslider-min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        pausePlay: false,
+        mousewheel: false,
+        rtl: true,
+        nav: false
+
+      });
+    });
+  </script>
 </head>
 
 <body>
@@ -27,14 +44,109 @@
             <nav class="main-nav">
               <ul class="flex">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Chapter</a></li>
+                <li><a href="view-full-manual.html">Chapter</a>
+
+                  <div class="mega-menu">
+                    <div class="mega-column">
+
+
+                      <div class="menu-section">
+                        <h4>SERVICE INITIATION</h4>
+                        <ul>
+                          <li>Service Reminder & Followup</li>
+                          <li>Appointment Scheduling and Confirmation</li>
+                        </ul>
+                      </div>
+
+                      <div class="menu-section">
+                        <h4>VEHICLE RECEIVING</h4>
+                        <ul>
+                          <li>Attending Vehicles Through Pickup</li>
+                          <li>Receiving Customers at Workshop</li>
+                          <li>Job Card Opening</li>
+                        </ul>
+                      </div>
+
+                      <div class="menu-section">
+                        <h4>REPAIR & TRACKING</h4>
+                        <ul>
+                          <li>Vehicle Tracking on Shop Floor</li>
+                          <li>Delay in Delivery & Holdup</li>
+                          <li>Spare Part Availability</li>
+                          <li>Road Test & Final Inspection</li>
+                          <li>Washing & Cleaning</li>
+                          <li>Faster Vehicle Service through Specialised Bays</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="mega-column">
+                      <div class="menu-section">
+                        <h4>VEHICLE DELIVERY</h4>
+                        <ul>
+                          <li>Job Card Closing & Work Explanation</li>
+                          <li>Feedback, Billing & Vehicle Delivery</li>
+                          <li>Vehicle Delivery through Dropping at Customer Location</li>
+                        </ul>
+                      </div>
+
+                      <div class="menu-section">
+                        <h4>PSF & COMPLAINT RESOLUTION</h4>
+                        <ul>
+                          <li>Post Service Feedback & Calibration</li>
+                          <li>Addressing PSF Complaints & Post Resolution Followup</li>
+                          <li>Attending Complaint Customers</li>
+                          <li>Repeat Job and Revisit Analysis</li>
+                        </ul>
+                      </div>
+
+                      <div class="menu-section">
+                        <h4>CUSTOMER ENGAGEMENT ACTIVITIES</h4>
+                        <ul>
+                          <li>Extended Warranty & CCP Sale</li>
+                          <li>Marketing Campaigns</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="mega-column">
+                      <div class="menu-section">
+                        <h4>WARRANTY & TECHNICAL</h4>
+                        <ul>
+                          <li>Normal Warranty, Goodwill, Recall Campaign</li>
+                          <li>Extended Warranty</li>
+                          <li>Pre-Delivery Inspection for New Car Sale</li>
+                          <li>Field Technical Information Report (FTIR)</li>
+                          <li>Vehicle Diagnosis</li>
+                        </ul>
+                      </div>
+
+                      <div class="menu-section">
+                        <h4>CUSTOMER CONVENIENCE FACILITIES</h4>
+                        <ul>
+                          <li>Service On Wheels (SOW)</li>
+                          <li>Road Side Assistance</li>
+                          <li>EV Charging</li>
+                        </ul>
+                      </div>
+
+                      <div class="menu-section">
+                        <h4>SAFETY & SECURITY</h4>
+                        <ul>
+                          <li>Data & Cyber Security</li>
+                          <li>5S & Safety</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
                 <li><a href="#">Roles</a></li>
-                <li><a href="#">About Manual</a></li>
+                <li><a href="about-manual.html">About Manual</a></li>
               </ul>
             </nav>
 
             <div class="search-box">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="" id="searchInput">
               <button class="search-btn">
                 <svg width="40" height="40" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -48,37 +160,58 @@
           </div>
         </div>
       </div>
+
+
     </header>
 
     <!-- Banner section end here -->
     <section id="banner">
-      <ul>
-        <li>
-          <img src="assets/images/banner1.png" alt="Banner" width="1920" height="1080">
-        </li>
-      </ul>
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="assets/images/banner1.jpg" alt="Banner" width="1920" height="1080">
+          </li>
+
+          <li>
+            <img src="assets/images/banner2.jpg" alt="Banner" width="1920" height="1080">
+          </li>
+
+          <li>
+            <img src="assets/images/banner3.jpg" alt="Banner" width="1920" height="1080">
+          </li>
+        </ul>
+      </div>
       <!--  select role  -->
 
-      <div class="select-role">
-        <section class="">
-          <div class="container">
-            <div class="accordion">
-              <!-- Section 2.1 -->
-              <div class="accordion-item">
-                <div class="accordion-header">SELECT YOUR ROLE</div>
-                <div class="accordion-content">
-                  <a href="chapter-details.html">Service Marketing Reminder Executive (SMRE)</a>
-                  <a href="chapter-details.html">Role 2</a>
-                  <a href="chapter-details.html">Role 3</a>
-                  <a href="chapter-details.html">Role 4</a>
-                </div>
+
+
+
+
+
+    </section>
+
+
+    <!-- <div class="row blueBg"> -->
+    <div class="select-role">
+      <section class="">
+        <div class="container">
+          <div class="accordion">
+            <!-- Section 2.1 -->
+            <div class="accordion-item">
+              <div class="accordion-header">SELECT YOUR ROLE</div>
+              <div class="accordion-content">
+                <a href="chapter-details.html">Service Marketing Reminder Executive (SMRE)</a>
+                <a href="chapter-details.html">Role 2</a>
+                <a href="chapter-details.html">Role 3</a>
+                <a href="chapter-details.html">Role 4</a>
               </div>
+              <!-- </div> -->
 
 
               <!-- Section 2.3 -->
               <div class="accordion-item">
                 <div class="accordion-header">
-                  <a href="services.html">VIEW FULL MANUAL</a>
+                  <a href="view-full-manual.html">VIEW FULL MANUAL</a>
 
                 </div>
               </div>
@@ -88,138 +221,134 @@
 
           </div>
 
-        </section>
+      </section>
+    </div>
+  </div>
+  <!----------------------------------------------- Common section start  here -------------------------------------------------------->
+
+  <div class="wrapper-Responsibilities">
+    <!-- Roles and Responsibilities  -->
+
+
+  </div>
+  <!-- footer start here -->
+  <section class="footer-component">
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="reach_sales">
+          <div class="reach_us">
+            <h3>REACH US</h3>
+            <div class="title_reach_option">
+              <a href="/dealer-showrooms" class="locate-btn">Locate A Dealer</a>
+            </div>
+            <div class="title_reach_option">
+              <a href="/book-showroom-visit" class="locate-btn">Book Showroom Visit</a>
+            </div>
+
+          </div>
+          <div class="menu-blocks">
+            <h5>Corporate</h5>
+            <ul>
+              <li><a href="/corporate/about-us">About Us</a></li>
+              <li><a href="/corporate/investors">Investors</a></li>
+              <li><a href="/corporate/careers">Careers</a></li>
+              <li><a href="/corporate/media">Media</a></li>
+              <li><a href="/corporate/reach-us">Reach Us</a></li>
+            </ul>
+          </div>
+          <div class="menu-blocks">
+            <h5>Sales</h5>
+            <ul>
+              <li><a href="/channels/arena/all-cars">Maruti Suzuki Arena</a></li>
+              <li><a href="https://www.nexaexperience.com">Nexa</a></li>
+              <li><a href="https://www.marutisuzukitruevalue.com/">True Value</a></li>
+              <li><a href="https://www.marutisuzukicommercial.com">Commercial</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="menu_social">
+          <div class="menu-blocks">
+            <h5>More From Us</h5>
+            <ul>
+              <li><a href="https://www.marutisuzukidrivingschool.com/">Maruti Suzuki Driving School</a></li>
+              <li><a href="/more-from-us/finance">Maruti Suzuki Smart Finance</a></li>
+              <li><a href="/more-from-us/insurance">Maruti Suzuki Insurance Broking</a></li>
+              <li><a href="/more-from-us/maruti-suzuki-rewards">Maruti Suzuki Rewards</a></li>
+              <li><a href="/genuine-accessories">Maruti Suzuki Genuine Accessories</a></li>
+              <li><a href="/genuine-parts">Maruti Suzuki Genuine Parts</a></li>
+              <li><a href="/more-from-us/maruti-suzuki-leasing">Maruti Suzuki Leasing</a></li>
+              <li><a href="/more-from-us/institutional-customers">Institutional Customers</a></li>
+              <li><a href="/subscribe">Maruti Suzuki Subscribe</a></li>
+            </ul>
+          </div>
+          <div class="social_media">
+            <div class="footer-mail">
+              <h3><a href="tel:18001021800">1800 102 1800</a></h3>
+              <h3><a href="mailto:contact@maruti.co.in">contact@maruti.co.in</a></h3>
+            </div>
+
+            <ul>
+              <li><a href="#"><img
+                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/black_whatsup.png"
+                    alt="whatsapp"></a></li>
+              <li><a href="#"><img
+                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/mobile.png"
+                    alt="mobile"></a></li>
+              <li><a href="#"><img
+                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/mail.png"
+                    alt="mail"></a></li>
+              <li><a href="#"><img
+                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/facebook-footer.png"
+                    alt="facebook"></a></li>
+              <li><a href="#"><img
+                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/x_logo.webp"
+                    alt="twitter"></a></li>
+            </ul>
+
+            <div class="play-store-link">
+              <h4>Download App</h4>
+              <a href="#"><img
+                  src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/images/msr-android.webp"
+                  alt="android"></a>
+              <a href="#"><img
+                  src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/images/msr-ios.webp"
+                  alt="ios"></a>
+            </div>
+
+            <div class="qr_code">
+              <div>SCAN TO CHAT <br />
+                <span> WITH US</span>
+              </div>
+              <img src="/images/footer_whatsapp_qr.webp" alt="">
+            </div>
+          </div>
+        </div>
+
       </div>
 
+      <div>
+        <p class="disclaimer-paragraph">*Car images shown are of top variant and for illustration purposes only.
+          Accessories and features may not be part of standard equipment..</p>
+        <p class="disclaimer-paragraph">*The content and information available on this website is limited to the
+          sales
+          and services offered by Maruti Suzuki India Limited in the jurisdiction of India only.</p>
+        <p class="disclaimer-paragraph">*Prices/Schemes prevailing at the time of invoice /bill shall be
+          applicable.
+        </p>
+        <p class="disclaimer-paragraph"><strong>*Caution: Beware of Fake Promotions or Offers</strong></p>
+        <p class="disclaimer-paragraph">Please do not believe or engage with any promotional messages (SMS) or
+          Web-link which ask you to click on a link and fill in your details to win a Maruti Suzuki car. These SMS
+          or
+          Web-link based offers are fake, and Maruti Suzuki India Limited bears no liability or responsibility
+          whatsoever for any such communication which is fraudulent or misleading in nature.</p>
+        <p class="disclaimer-paragraph">*Based on JATO Dynamics' study dated January 15, 2025, conducted for all
+          fuel
+          type segment vehicles with GVW less than or equal to 2 Tonnes.</p>
+        <p class="disclaimer-paragraph">ESP is the registered trademark of Mercedes-Benz Group AG</p>
+      </div>
+    </footer>
+  </section>
 
-
-
-    </section>
-    <!----------------------------------------------- Common section start  here -------------------------------------------------------->
-
-    <div class="wrapper-Responsibilities">
-      <!-- Roles and Responsibilities  -->
-
-
-    </div>
-    <!-- footer start here -->
-    <section class="footer-component">
-      <footer class="footer">
-        <div class="footer-top">
-          <div class="reach_sales">
-            <div class="reach_us">
-              <h3>REACH US</h3>
-              <div class="title_reach_option">
-                <a href="/dealer-showrooms" class="locate-btn">Locate A Dealer</a>
-              </div>
-              <div class="title_reach_option">
-                <a href="/book-showroom-visit" class="locate-btn">Book Showroom Visit</a>
-              </div>
-
-            </div>
-            <div class="menu-blocks">
-              <h5>Corporate</h5>
-              <ul>
-                <li><a href="/corporate/about-us">About Us</a></li>
-                <li><a href="/corporate/investors">Investors</a></li>
-                <li><a href="/corporate/careers">Careers</a></li>
-                <li><a href="/corporate/media">Media</a></li>
-                <li><a href="/corporate/reach-us">Reach Us</a></li>
-              </ul>
-            </div>
-            <div class="menu-blocks">
-              <h5>Sales</h5>
-              <ul>
-                <li><a href="/channels/arena/all-cars">Maruti Suzuki Arena</a></li>
-                <li><a href="https://www.nexaexperience.com">Nexa</a></li>
-                <li><a href="https://www.marutisuzukitruevalue.com/">True Value</a></li>
-                <li><a href="https://www.marutisuzukicommercial.com">Commercial</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="menu_social">
-            <div class="menu-blocks">
-              <h5>More From Us</h5>
-              <ul>
-                <li><a href="https://www.marutisuzukidrivingschool.com/">Maruti Suzuki Driving School</a></li>
-                <li><a href="/more-from-us/finance">Maruti Suzuki Smart Finance</a></li>
-                <li><a href="/more-from-us/insurance">Maruti Suzuki Insurance Broking</a></li>
-                <li><a href="/more-from-us/maruti-suzuki-rewards">Maruti Suzuki Rewards</a></li>
-                <li><a href="/genuine-accessories">Maruti Suzuki Genuine Accessories</a></li>
-                <li><a href="/genuine-parts">Maruti Suzuki Genuine Parts</a></li>
-                <li><a href="/more-from-us/maruti-suzuki-leasing">Maruti Suzuki Leasing</a></li>
-                <li><a href="/more-from-us/institutional-customers">Institutional Customers</a></li>
-                <li><a href="/subscribe">Maruti Suzuki Subscribe</a></li>
-              </ul>
-            </div>
-            <div class="social_media">
-              <div class="footer-mail">
-                <h3><a href="tel:18001021800">1800 102 1800</a></h3>
-                <h3><a href="mailto:contact@maruti.co.in">contact@maruti.co.in</a></h3>
-              </div>
-
-              <ul>
-                <li><a href="#"><img
-                      src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/black_whatsup.png"
-                      alt="whatsapp"></a></li>
-                <li><a href="#"><img
-                      src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/mobile.png"
-                      alt="mobile"></a></li>
-                <li><a href="#"><img
-                      src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/mail.png"
-                      alt="mail"></a></li>
-                <li><a href="#"><img
-                      src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/facebook-footer.png"
-                      alt="facebook"></a></li>
-                <li><a href="#"><img
-                      src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/-/media/images/maruti/marutisuzuki/global/social-media-icons/x_logo.webp"
-                      alt="twitter"></a></li>
-              </ul>
-
-              <div class="play-store-link">
-                <h4>Download App</h4>
-                <a href="#"><img
-                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/images/msr-android.webp"
-                    alt="android"></a>
-                <a href="#"><img
-                    src="https://az-ci-afde-prd-arena-01-e7fmh3dxacbgeyh5.z01.azurefd.net/images/msr-ios.webp"
-                    alt="ios"></a>
-              </div>
-
-              <div class="qr_code">
-                <div>SCAN TO CHAT <br />
-                  <span> WITH US</span>
-                </div>
-                <img src="/images/footer_whatsapp_qr.webp" alt="">
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div>
-          <p class="disclaimer-paragraph">*Car images shown are of top variant and for illustration purposes only.
-            Accessories and features may not be part of standard equipment..</p>
-          <p class="disclaimer-paragraph">*The content and information available on this website is limited to the
-            sales
-            and services offered by Maruti Suzuki India Limited in the jurisdiction of India only.</p>
-          <p class="disclaimer-paragraph">*Prices/Schemes prevailing at the time of invoice /bill shall be
-            applicable.
-          </p>
-          <p class="disclaimer-paragraph"><strong>*Caution: Beware of Fake Promotions or Offers</strong></p>
-          <p class="disclaimer-paragraph">Please do not believe or engage with any promotional messages (SMS) or
-            Web-link which ask you to click on a link and fill in your details to win a Maruti Suzuki car. These SMS
-            or
-            Web-link based offers are fake, and Maruti Suzuki India Limited bears no liability or responsibility
-            whatsoever for any such communication which is fraudulent or misleading in nature.</p>
-          <p class="disclaimer-paragraph">*Based on JATO Dynamics' study dated January 15, 2025, conducted for all
-            fuel
-            type segment vehicles with GVW less than or equal to 2 Tonnes.</p>
-          <p class="disclaimer-paragraph">ESP is the registered trademark of Mercedes-Benz Group AG</p>
-        </div>
-      </footer>
-    </section>
-    
   </div>
 
   <script>
@@ -231,6 +360,36 @@
       });
     });
   </script>
+  <script>
+    const input = document.getElementById('searchInput');
+    const text = "Please search here...";
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      if (!isDeleting) {
+        // Typing forward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index++;
+        if (index > text.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500); // Pause before deleting
+          return;
+        }
+      } else {
+        // Deleting backward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index--;
+        if (index === 0) {
+          isDeleting = false;
+        }
+      }
+      setTimeout(typeEffect, isDeleting ? 50 : 100); // Speed: deleting faster
+    }
+
+    typeEffect();
+  </script>
+
 
   <body>
 
