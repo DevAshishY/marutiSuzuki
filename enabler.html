@@ -20,7 +20,7 @@
     <header id="header">
       <div class="header">
         <div class="container">
-          <div class="header-inner flex space_between">
+          <div class="header-inner flex">
             <div class="logo">
               <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="350" height="39"></a>
             </div>
@@ -34,7 +34,7 @@
             </nav>
 
             <div class="search-box">
-              <input type="text" placeholder="" id="searchInput">
+              <input type="text" placeholder="">
               <button class="search-btn">
                 <svg width="40" height="40" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -53,7 +53,7 @@
     <section id="banner">
       <ul>
         <li>
-          <img src="assets/images/banner4.jpg" alt="Banner" width="1920" height="1080">
+          <img src="assets/images/banner1.png" alt="Banner" width="1920" height="1080">
         </li>
       </ul>
     </section>
@@ -64,76 +64,53 @@
         <nav class="breadcrumb">
           <a href="#">Home</a>
           <span class="separator">›</span>
-          <a href="#">Service Reminder</a>
+          <a href="#">Enabler</a>
           <span class="separator">›</span>
-          <a href="#">SMRE Calling Using Speed Dialer</a>
-          <span class="separator">›</span>
-          <span>Enablers</span>
+          <a href="#">Subscription to Chatbot & Voicebot</a>
         </nav>
 
-        <h2>Subscription to Chatbot & Voicebot</h2>
-        <p>New workshops need to be subscribed to SMR bot to be able to receive chatbot & voicebot leads.</p>
+        <h2> Steps for onboarding to SMR Bot:</h2>
 
         <div class="contentPlaceholder">
           <h5>Step 1 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            Log in to the URL: https://smr-onboarding.rezo.ai/ using the registered email ID of the Service Head or the
+            CEO.
+
           </p>
+
         </div>
         <div class="contentPlaceholder">
           <h5>Step 2 </h5>
           <p>
-            After logging in, enter the Parent Code and select the
+            After logging in, enter the Parent Code and select the ‘Region’ to view all workshops linked to the
+            dealership.
+
           </p>
+
+
         </div>
         <div class="contentPlaceholder">
           <h5>Step 3 </h5>
           <p>
-            Choose the workshops to be activated for Service Marketing Reminder (SMR) and click
+            Choose the workshops to be activated for Service Marketing Reminder (SMR) and click ‘Submit’.
+            Who will do: Service Head
           </p>
 
+
         </div>
+
         <div class="contentPlaceholder">
           <h5>Step 4 </h5>
           <p>
             Regional Office approval is required for onboarding. Upon approval, the credentials for accessing the portal
-            will be
-            shared with the dealer
+            will be shared with the dealer.
           </p>
 
 
         </div>
-        <div class="contentPlaceholder">
-          <h5>Step 5 </h5>
-          <p>
-            Fill in the customer response and your remarks in the provided fields.
-          </p>
-
-
-        </div>
-        <div class="contentPlaceholder">
-          <h5>Step 6 </h5>
-          <p>
-            WhatsApp and SMS notifications can also be sent using the dialer as a service reminder to customers.
-          </p>
-          <ul>
-            <li>Click on the <strong>‘WhatsApp’ </strong> or the <strong> ‘SMS’ </strong> icon to open the message
-              screen.</li>
-            <li>Select the applicable message template.</li>
-            <li>Select the customer phone number and click on <strong> ‘Send’ </strong> .</li>
-
-          </ul>
-
-        </div>
-        <div class="contentPlaceholder">
-          <h5>Step 7 </h5>
-          <p>
-            Click on <strong> ‘Submit’ </strong>to complete the call.
-          </p>
-        </div>
+        
       </div>
-
-
     </section>
 
     <!-- zoom slider -->
@@ -144,7 +121,8 @@
           <div class="zoom-slider-item">
             <div class="overlay"></div>
             <div class="zoom-slider-item-assets">
-              <img src="assets/images/car.png" alt="Zoom In" class="zoom-in-icon" width="1024" height="629">
+              <img src="assets/images/login4.png" alt="Step 1" width="1745" height="620">
+
 
             </div>
 
@@ -158,6 +136,8 @@
                   Digital Leads</span>
 
                 <p>A premium, innovative and global automotive experience</p>
+                <img src="assets/images/car.png" alt="Zoom In" class="zoom-in-icon" width="1024" height="629">
+
                 <a href="#" class="btn" target="_blank">Explore</a>
               </div>
             </div>
@@ -363,35 +343,6 @@
         parent.classList.toggle('active');
       });
     });
-  </script>
-  <script>
-    const input = document.getElementById('searchInput');
-    const text = "Please search here...";
-    let index = 0;
-    let isDeleting = false;
-
-    function typeEffect() {
-      if (!isDeleting) {
-        // Typing forward
-        input.setAttribute("placeholder", text.slice(0, index));
-        index++;
-        if (index > text.length) {
-          isDeleting = true;
-          setTimeout(typeEffect, 1500); // Pause before deleting
-          return;
-        }
-      } else {
-        // Deleting backward
-        input.setAttribute("placeholder", text.slice(0, index));
-        index--;
-        if (index === 0) {
-          isDeleting = false;
-        }
-      }
-      setTimeout(typeEffect, isDeleting ? 50 : 100); // Speed: deleting faster
-    }
-
-    typeEffect();
   </script>
 
   <body>
