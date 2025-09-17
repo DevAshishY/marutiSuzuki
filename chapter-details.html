@@ -20,7 +20,7 @@
     <header id="header">
       <div class="header">
         <div class="container">
-          <div class="header-inner flex">
+          <div class="header-inner flex space_between">
             <div class="logo">
               <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="350" height="39"></a>
             </div>
@@ -34,7 +34,7 @@
             </nav>
 
             <div class="search-box">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="" id="searchInput">
               <button class="search-btn">
                 <svg width="40" height="40" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -53,7 +53,7 @@
     <section id="banner">
       <ul>
         <li>
-          <img src="assets/images/banner1.png" alt="Banner" width="1920" height="1080">
+          <img src="assets/images/banner4.jpg" alt="Banner" width="1920" height="1080">
         </li>
       </ul>
     </section>
@@ -71,52 +71,88 @@
           <span>SMRE Calling Using Manual Dialer</span>
         </nav>
 
-        <h2>SMRE Calling Without Dialer</h2>
+        <h2>SMRE Calling Using Speed Dialer</h2>
 
         <div class="contentPlaceholder">
           <h5>Step 1 </h5>
           <p>
             Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
           </p>
-          <img src="assets/images/chapter1.jpg" alt="Step 1" width="1745" height="620">
+          <img src="assets/images/details1.jpg" alt="Step 1" width="1745" height="620">
         </div>
         <div class="contentPlaceholder">
           <h5>Step 2 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            Click on the ‘Speed Dialling’ button to initiate automated calls using speed dialer. <br>
+            • All necessary information about the customer will be displayed on the screen.<br>
+            • Review the customer details while the call is being connected.<br>
           </p>
-          <img src="assets/images/chapter1.jpg" alt="Step 1" width="1745" height="620">
+          <img src="assets/images/details2.jpg" alt="Step 1" width="1745" height="620">
         </div>
         <div class="contentPlaceholder">
           <h5>Step 3 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            Click on the ‘Speed Dialling’ button to initiate automated calls using speed dialer. <br>
+            • All necessary information about the customer will be displayed on the screen.<br>
+            • Review the customer details while the call is being connected.<br>
           </p>
-          <img src="assets/images/chapter1.jpg" alt="Step 1" width="1745" height="620">
+
         </div>
         <div class="contentPlaceholder">
           <h5>Step 4 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            Based on the discussion with the customer, select the appropriate call disposition option: <br>
+
           </p>
-          <img src="assets/images/chapter1.jpg" alt="Step 1" width="1745" height="620">
+          <ul>
+            <li>
+              • Book an Appointment
+
+            </li>
+            <li>
+              • Call Me Later
+
+            </li>
+            <li>
+              • Low Mileage
+
+
+            </li>
+            <li>• Refused for Service</li>
+            <li>• Wrong Number</li>
+
+          </ul>
+          <img src="assets/images/details3.jpg" alt="Step 1" width="1745" height="620">
+
         </div>
         <div class="contentPlaceholder">
           <h5>Step 5 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            Fill in the customer response and your remarks in the provided fields.
           </p>
+
+          <img src="assets/images/details4.jpg" alt="Step 1" width="1745" height="620">
+
         </div>
         <div class="contentPlaceholder">
           <h5>Step 6 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            WhatsApp and SMS notifications can also be sent using the dialer as a service reminder to customers.
           </p>
+          <ul>
+            <li>Click on the <strong>‘WhatsApp’ </strong> or the <strong> ‘SMS’ </strong> icon to open the message
+              screen.</li>
+            <li>Select the applicable message template.</li>
+            <li>Select the customer phone number and click on <strong> ‘Send’ </strong> .</li>
+
+          </ul>
+
+          <img src="assets/images/details5.jpg" alt="Step 1" width="1745" height="620">
         </div>
         <div class="contentPlaceholder">
           <h5>Step 7 </h5>
           <p>
-            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+            Click on <strong> ‘Submit’ </strong>to complete the call.
           </p>
         </div>
       </div>
@@ -351,6 +387,35 @@
         parent.classList.toggle('active');
       });
     });
+  </script>
+  <script>
+    const input = document.getElementById('searchInput');
+    const text = "Please search here...";
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      if (!isDeleting) {
+        // Typing forward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index++;
+        if (index > text.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500); // Pause before deleting
+          return;
+        }
+      } else {
+        // Deleting backward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index--;
+        if (index === 0) {
+          isDeleting = false;
+        }
+      }
+      setTimeout(typeEffect, isDeleting ? 50 : 100); // Speed: deleting faster
+    }
+
+    typeEffect();
   </script>
 
   <body>

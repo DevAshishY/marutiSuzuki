@@ -5,13 +5,17 @@
     z-index: 9999;
     box-shadow: 3px 2px 27px rgba(0, 0, 0, 0.2);
 }
+
 .header {
     padding: 24px 0 14px;
+
     .container {
         max-width: 1865px;
     }
+
     nav.main-nav {
         margin-left: 100px;
+
         li {
             margin: 0 50px;
 
@@ -49,11 +53,14 @@
 
 }
 
+
+
+
 @media screen and (max-width:1440px) {
-    .header{
-        .container{
+    .header {
+        .container {
             max-width: 1000px;
         }
     }
-    
+
 }

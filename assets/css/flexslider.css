@@ -57,6 +57,8 @@
 .flexslider .slides img {
     width: 100%;
     display: block;
+    /* height: 800px !important;
+    width: 1941px; */
 }
 
 .flexslider .slides:after {

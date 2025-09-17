@@ -51,7 +51,7 @@
             </nav>
 
             <div class="search-box">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="" id="searchInput">
               <button class="search-btn">
                 <svg width="40" height="40" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -263,6 +263,36 @@
       });
     });
   </script>
+  <script>
+    const input = document.getElementById('searchInput');
+    const text = "Please search here...";
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      if (!isDeleting) {
+        // Typing forward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index++;
+        if (index > text.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500); // Pause before deleting
+          return;
+        }
+      } else {
+        // Deleting backward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index--;
+        if (index === 0) {
+          isDeleting = false;
+        }
+      }
+      setTimeout(typeEffect, isDeleting ? 50 : 100); // Speed: deleting faster
+    }
+
+    typeEffect();
+  </script>
+
 
   <body>
 
