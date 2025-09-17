@@ -26,6 +26,10 @@
                 transition: all 0.3s ease;
                 white-space: nowrap;
             }
+
+            &:hover .mega-menu {
+                display: flex;
+            }
         }
     }
 }
