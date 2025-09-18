@@ -29,13 +29,12 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="view-full-manual.html">Chapter</a></li>
                 <li><a href="#">Roles</a></li>
-                <li><a href="about-manual.html">About Manual</a></li>
-
+                <li><a href="#">About Manual</a></li>
               </ul>
             </nav>
 
             <div class="search-box">
-              <input type="text" placeholder="">
+              <input type="text" placeholder="" id="searchInput">
               <button class="search-btn">
                 <a href="search.html">
                   <svg width="40" height="40" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -56,62 +55,152 @@
     <section id="banner">
       <ul>
         <li>
-          <img src="assets/images/chapter-banner.jpg" alt="Banner" width="1600" height="900">
+          <img src="assets/images/banner4.jpg" alt="Banner" width="1920" height="1080">
         </li>
       </ul>
     </section>
     <!----------------------------------------------- Common section start  here -------------------------------------------------------->
-    <!-- service initiation section start here -->
-    <section class="row blueBg">
+    <!-- chapterDetails section start here -->
+    <section class="blueBg chapterDetails">
       <div class="container">
-        <div class="accordion">
-          <!-- Section 2.1 -->
-          <div class="accordion-item">
-            <div class="accordion-header">2.1 - Service Reminder <i class="arrow down"></i></div>
-            <div class="accordion-content">
-              <a href="smre3.html">2.1.1 - SMRE Calling Using Speed Dialer</a>
-              <a href="smre3.html">2.1.2 - SMRE Calling Using Manual Dialer</a>
+        <nav class="breadcrumb">
+          <a href="#">Home</a>
+
+          <span class="separator">›</span>
+          <a href="#">2. Service Reminder & Followup</a>
+
+
+          <span class="separator">›</span>
+          <a href="#">2.1 - Service Reminder</a>
+          <span class="separator">›</span>
+          <a href="#">2.1.1 - SMRE Calling Using Speed Dialer</a>
+
+        </nav>
+
+        <h2>SMRE Calling Using Speed Dialer</h2>
+
+        <div class="contentPlaceholder">
+          <h5>Step 1 </h5>
+          <p>
+            Log in to the SMRE ID in DExC and navigate to the ‘Calling List’.
+          </p>
+          <img src="assets/images/details1.jpg" alt="Step 1" width="1745" height="620">
+        </div>
+        <div class="contentPlaceholder">
+          <h5>Step 2 </h5>
+          <p>
+            Click on the ‘Speed Dialling’ button to initiate automated calls using speed dialer. <br>
+            • All necessary information about the customer will be displayed on the screen.<br>
+            • Review the customer details while the call is being connected.<br>
+          </p>
+          <img src="assets/images/details2.jpg" alt="Step 1" width="1745" height="620">
+        </div>
+        <div class="contentPlaceholder">
+          <h5>Step 3 </h5>
+          <p>
+            Once the call is connected to a customer, talk to the customer using the standard script.
+            <br>
+            Note: If a customer doesn’t answer the call, the system will automatically update the call status & generate
+            a follow-up date.
+          </p>
+
+        </div>
+        <div class="contentPlaceholder">
+          <h5>Step 4 </h5>
+          <p>
+            Based on the discussion with the customer, select the appropriate call disposition option: <br>
+
+          </p>
+          <ul>
+            <li>
+              • Book an Appointment
+
+            </li>
+            <li>
+              • Call Me Later
+
+            </li>
+            <li>
+              • Low Mileage
+
+
+            </li>
+            <li>• Refused for Service</li>
+            <li>• Wrong Number</li>
+
+          </ul>
+
+        </div>
+        <div class="btnCOver">
+          <a href="chapter.html" class="btn">View Full Chapter</a>
+        </div>
+      </div>
+
+
+    </section>
+    <div class="container">
+      <div class="navigation-buttons">
+
+        <a href="smre2.html" class="btn">Previous</a>
+        <a href="smre4.html" class="btn">Next</a>
+
+      </div>
+    </div>
+    <!-- zoom slider -->
+    <!-- <div class="row grayBg">
+      <div class="container">
+        <div class="zoom-slider">
+          <div class="zoom-slider-item">
+            <div class="overlay"></div>
+            <div class="zoom-slider-item-assets">
+              <img src="assets/images/car.png" alt="Zoom In" class="zoom-in-icon" width="1024" height="629">
+
             </div>
+
+            <div class="zoom-slider-item-info">
+              <div class="zoom-slider-item-logo">
+                <strong>Previous</strong>
+              </div>
+              <div class="zoom-slider-item-desc">
+
+                <span>Follow Up on
+                  Digital Leads</span>
+
+                <p>A premium, innovative and global automotive experience</p>
+                <a href="#" class="btn" target="_blank">Explore</a>
+              </div>
+            </div>
+
+
           </div>
+          <div class="zoom-slider-item">
+            <div class="overlay"></div>
+            <div class="zoom-slider-item-assets">
+              <img src="assets/images/car.png" alt="Zoom In" class="zoom-in-icon" width="1024" height="629">
 
-
-          <!-- Section 2.3 -->
-          <div class="accordion-item">
-            <div class="accordion-header">2.3 - Reports/Formats <i class="arrow down"></i></div>
-            <div class="accordion-content">
-              <a href="#">2.3.1 - SMR Bot Status Report</a>
-              <a href="#">2.3.2 - SMR Due Date Wise Report</a>
-              <a href="#">2.3.3 - Due Vs Done Report</a>
-              <a href="#">2.3.4 - Last Attempt Report</a>
-              <a href="#">2.3.5 - Hyperlocal Status Report</a>
-              <a href="#">2.3.6 - SMRE Performance Dashboard</a>
-              <a href="#">2.3.7 - Monthly SMRE Performance Report</a>
-              <a href="#">2.3.8 - Dialer Dashboard</a>
             </div>
-          </div>
 
+            <div class="zoom-slider-item-info">
+              <div class="zoom-slider-item-logo">
+                <strong>Next</strong>
+              </div>
+              <div class="zoom-slider-item-desc">
 
-          <!-- Section Annexures -->
-          <div class="accordion-item">
-            <div class="accordion-header">Annexures <i class="arrow down"></i></div>
-            <div class="accordion-content">
-              <a href="enabler.html">2.A- Service Reminder Using Chatbot</a>
-              <a href="dexc.html">2.B- Service Reminder using Voicebot</a>
-              <a href="dexc.html">2.C- Hyperlocal Leads</a>
-              <a href="dexc.html">2.D- Website Drop-Off Leads</a>
-              <a href="dexc.html">2.E- Customer Tagging in DExC</a>
-              <a href="./assets/images/Customer_Lounge_Feedback_Form.pdf" target="_blank">Customer Lounge Feedback
-                form</a>
+                <span>Follow Up on
+                  Digital Leads</span>
+
+                <p>A premium, innovative and global automotive experience</p>
+                <a href="#" class="btn" target="_blank">Explore</a>
+              </div>
             </div>
+
+
           </div>
 
 
         </div>
-
       </div>
-
-    </section>
-
+    </div> -->
     <!-- footer start here -->
     <section class="footer-component">
       <footer class="footer">
@@ -238,6 +327,35 @@
         parent.classList.toggle('active');
       });
     });
+  </script>
+  <script>
+    const input = document.getElementById('searchInput');
+    const text = "Please search here...";
+    let index = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      if (!isDeleting) {
+        // Typing forward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index++;
+        if (index > text.length) {
+          isDeleting = true;
+          setTimeout(typeEffect, 1500); // Pause before deleting
+          return;
+        }
+      } else {
+        // Deleting backward
+        input.setAttribute("placeholder", text.slice(0, index));
+        index--;
+        if (index === 0) {
+          isDeleting = false;
+        }
+      }
+      setTimeout(typeEffect, isDeleting ? 50 : 100); // Speed: deleting faster
+    }
+
+    typeEffect();
   </script>
 
   <body>

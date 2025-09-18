@@ -22,7 +22,7 @@ body {
 
 .container {
     max-width: 1746px;
-    max-width: 100%;
+    /* max-width: 100%; */
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -104,7 +104,16 @@ section#banner {
 /* select role */
 
 .select-role {
+
+    &.aboutPage {
+        p {
+            font-size: 20px;
+        }
+    }
+
     background: #072386;
+
+
 
     width: 100%;
     /* height: 248px; */
@@ -124,6 +133,12 @@ section#banner {
                 padding: 4px;
                 top: -3px;
                 left: -12px;
+            }
+
+            .wrap {
+                display: inline-block;
+                position: relative;
+                left: 10px;
             }
         }
 
@@ -190,8 +205,9 @@ section#banner {
             font-size: 16px;
             color: #000;
             overflow: hidden;
-            padding: 20px;
+            /* padding: 20px; */
             text-align: center;
+            margin: 0;
 
             a {
                 border-radius: 41px;
@@ -678,4 +694,33 @@ section#banner {
     font-size: 25;
     background: gray;
     height: 800px;
+}
+
+
+
+/* navigation button */
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+
+    a {
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+}
+
+.btnCOver {
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: end;
+
+    a {
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+    }
 }
