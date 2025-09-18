@@ -624,7 +624,6 @@ section#banner {
 .menu-section ul li:hover {
     color: #0078d7;
     cursor: pointer;
-<<<<<<< HEAD
 }
 
 
@@ -634,6 +633,4 @@ section#banner {
     font-size: 25;
     background: gray;
     height: 800px;
-=======
->>>>>>> 71596b2133c1c052027058bff232bc5336b7fae8
 }
