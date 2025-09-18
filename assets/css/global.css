@@ -115,6 +115,20 @@ section#banner {
 
     .accordion-item {
         text-align: center;
+
+        .accordion-header {
+            .arrow {
+                position: static;
+                margin-left: 23px;
+                transition: none;
+            }
+        }
+
+        &.active .arrow {
+            position: relative;
+            top: 3px;
+            left: 0;
+        }
     }
 
     .accordion-content a:first-child {
@@ -285,6 +299,12 @@ section#banner {
     margin-bottom: 10px;
     overflow: hidden;
     transition: all 0.3s ease;
+
+    &.active .arrow {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        top: 25px;
+    }
 }
 
 .accordion-header {
@@ -294,6 +314,21 @@ section#banner {
     color: #072386;
     transition: all 0.3s ease;
     border-top: 1px solid #ddd;
+    position: relative;
+
+    .arrow {
+        border: solid #072386;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 5px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transition: all ease 0.5s;
+
+    }
 
 }
 
@@ -525,7 +560,13 @@ section#banner {
 
     .accordion {
         width: 100%;
+
+
+
+
     }
+
+
 
     .accordion-item.active .accordion-content {
         max-height: 1000px;
@@ -627,7 +668,7 @@ section#banner {
 }
 
 
-.about_manual p{
+.about_manual p {
     color: #fff;
     padding: 20px 50px;
     font-size: 25;

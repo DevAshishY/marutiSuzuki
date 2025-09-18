@@ -14,10 +14,10 @@
     }
 
     nav.main-nav {
-        margin-left: 100px;
+        margin-left: 0;
 
         li {
-            margin: 0 50px;
+            margin: 0 45px;
 
             a {
                 text-decoration: none;
@@ -53,18 +53,6 @@
         background: none;
         border: none;
         cursor: pointer;
-    }
-
-}
-
-
-
-
-@media screen and (max-width:1440px) {
-    .header {
-        .container {
-            max-width: 1000px;
-        }
     }
 
 }
