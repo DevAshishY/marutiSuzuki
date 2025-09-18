@@ -178,12 +178,11 @@ section#banner {
             background: #fff;
             /* width: 396px; */
             /* width: 419px; */
+            /* height: 454px;*/
 
-            /* height: 454px;
-            
-            */
-
-            width: 200px;
+            /* width: 200px; */
+            margin-bottom: 7px;
+            border-radius: 5px;
             height: 200px;
             display: flex;
             align-items: center;
@@ -558,7 +557,6 @@ section#banner {
     width: 100%;
     z-index: 1;
     pointer-events: none;
-}
 }
 
 
