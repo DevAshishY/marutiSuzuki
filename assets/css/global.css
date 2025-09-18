@@ -451,19 +451,19 @@ section#banner {
 .zoom-slider {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1.5rem;
     overflow: hidden;
 
     .zoom-slider-item {
         width: 25.4375rem !important;
-        height: 40rem !important;
+        height: 16rem !important;
         position: relative;
         overflow: hidden;
         transition: width 0.3s ease;
 
         &:hover {
-            width: 48.8% !important;
+            width: 32.8% !important;
 
             .zoom-slider-item-desc {
                 opacity: 1;
@@ -484,7 +484,7 @@ section#banner {
         img {
             /* video { */
             width: 100% !important;
-            height: 40rem !important;
+            height: 20rem !important;
             object-fit: cover;
             display: block;
             position: absolute;
@@ -504,7 +504,7 @@ section#banner {
 
             span {
                 display: block;
-                font-size: 40px;
+                font-size: 30px;
                 color: #fff;
             }
 
@@ -516,43 +516,46 @@ section#banner {
                 text-decoration: none;
                 display: inline-block;
                 border-radius: 10px;
+                padding: 10px;
+                font-size: 15px;
             }
         }
     }
+}
 
-    .zoom-slider-item:not(:hover) .zoom-slider-item-info {
-        width: 100%;
-        width: 100%;
+.zoom-slider-item:not(:hover) .zoom-slider-item-info {
+    width: 100%;
+    width: 100%;
 
+}
+
+.zoom-slider-item-logo {
+    strong {
+        font-size: 25px;
+        font-weight: 900;
+        color: #fff;
+        position: relative;
+        z-index: 9;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
     }
-
-    .zoom-slider-item-logo {
-        strong {
-            font-size: 25px;
-            font-weight: 900;
-            color: #fff;
-            position: relative;
-            z-index: 9;
-            display: block;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-    }
+}
 
 
 
 
 
-    .overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.4);
-        height: 100%;
-        width: 100%;
-        z-index: 1;
-        pointer-events: none;
-    }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
 }
 
 
