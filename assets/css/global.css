@@ -118,16 +118,19 @@ section#banner {
 
         .accordion-header {
             .arrow {
-                position: static;
-                margin-left: 23px;
+                margin-left: 18px;
                 transition: none;
+                position: relative;
+                padding: 4px;
+                top: -3px;
+                left: -12px;
             }
         }
 
         &.active .arrow {
             position: relative;
             top: 3px;
-            left: 0;
+            left: 11px;
         }
     }
 
