@@ -1,0 +1,157 @@
+/* ====================================================================================================================
+ * For large deveice
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 1800px) {
+
+    /* Header */
+    .header {
+        & nav.main-nav {
+            li {
+                margin: 0 20px;
+            }
+        }
+    }
+
+}
+
+
+/* ====================================================================================================================
+ * For Tablet landscapr deveice
+ * ====================================================================================================================*/
+@media screen and (max-width: 1200px) {
+
+    /* Header */
+    .header {
+        & nav.main-nav {
+            li {
+                margin: 0 10px;
+
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .logo {
+            width: 216px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .search-box {
+            input {
+                width: 310px;
+            }
+        }
+    }
+
+
+
+
+    /* footer  */
+    .footer-component {
+        .footer {
+            .footer-top {
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 20px;
+
+                .reach_sales {
+                    width: 100%;
+                }
+
+                .menu_social {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+
+    /* accordian */
+
+    .accordion {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .accordianFormat {
+        .colCover {
+            display: flex;
+            gap: 33px;
+            flex-wrap: wrap;
+            padding: 35px;
+        }
+    }
+
+    /* chapter details  */
+
+
+    .chapterDetails {
+        & .breadcrumb {
+            a {
+                text-decoration: none;
+                color: white;
+                transition: color 0.3s;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+
+
+/* ====================================================================================================================
+ * For Tablet deveice
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 950px) {
+
+    .header {
+        .search-box {
+            input {
+                width: 110px;
+            }
+
+        }
+
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ====================================================================================================================
+ * For Mobile deveice
+ * ====================================================================================================================*/
+
+@media screen and (max-width: 767px) {
+
+
+
+    /* FLex slider */
+    .flex-direction-nav .flex-prev {
+        opacity: 1;
+        left: 10px;
+    }
+
+    .flex-direction-nav .flex-next {
+        opacity: 1;
+        right: 10px;
+    }
+}
