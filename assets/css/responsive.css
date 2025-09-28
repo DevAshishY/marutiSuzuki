@@ -142,6 +142,127 @@
 
 @media screen and (max-width: 767px) {
 
+    /* Header */
+    .main-nav ul {
+        display: none;
+    }
+
+
+    /* Footer */
+
+    .footer-component {
+        & .footer {
+            & .footer-top {
+                .qr_code {
+                    justify-content: flex-start;
+                }
+
+                .menu_social {
+
+                    flex-direction: column;
+
+                    .social_media {
+                        text-align: left;
+
+                        ul {
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+
+                & .reach_sales {
+                    width: 100%;
+                    flex-direction: column;
+
+
+                    .menu-blocks {
+                        margin-bottom: 14px;
+                    }
+
+                    .reach_us {
+                        flex: none;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /* Common */
+    h1,
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .btn {
+        padding: 10px 24px;
+    }
+
+    /* accordian */
+    .accordion-header {
+        padding: 9px 16px;
+        font-size: 14px;
+
+        .arrow {
+            top: 11px;
+        }
+    }
+
+    .accordion-item {
+        &.active .arrow {
+            top: 16px;
+        }
+    }
+
+    .accordianFormat {
+        .colCover {
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+        }
+    }
+
+    /* chapter details */
+
+    .chapterDetails {
+        h2 {
+            margin-bottom: 20px;
+        }
+
+
+
+        & .breadcrumb {
+            font-size: 15px;
+            padding: 10px;
+            flex-wrap: wrap;
+
+            .separator {
+                font-size: 15px;
+            }
+        }
+
+        .contentPlaceholder {
+            padding-bottom: 27px;
+
+            h5 {
+                font-size: 16px;
+            }
+
+            p,
+            span {
+                font-size: 17px;
+                margin-bottom: 10px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+
+    }
+
 
 
     /* FLex slider */
@@ -154,4 +275,16 @@
         opacity: 1;
         right: 10px;
     }
+
+
+    /* navigation-buttons */
+
+    .navigation-buttons {
+        margin: 6px 0;
+
+        a {
+            font-size: 16px;
+        }
+    }
+
 }
