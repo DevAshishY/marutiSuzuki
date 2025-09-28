@@ -26,13 +26,12 @@
             <div class="logo">
               <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="350" height="39"></a>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" id="mainNav">
               <ul class="flex">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="view-full-manual.html">Chapter</a></li>
                 <li><a href="#">Roles</a></li>
-                <li><a href="about-manual.html">About Manual</a></li>
-
+                <li><a href="#">About Manual</a></li>
               </ul>
             </nav>
 
@@ -47,6 +46,11 @@
                   </svg>
                 </a>
               </button>
+              <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
 
             </div>
 
@@ -240,7 +244,30 @@
         parent.classList.toggle('active');
       });
     });
+
+
+
   </script>
+
+  <script>
+    // Menu Toggle Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mainNav.classList.toggle('open');
+    });
+
+    // Close menu when clicking a link (mobile only)
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          menuToggle.classList.remove('active');
+          mainNav.classList.remove('open');
+        }
+      });
+    });</script>
 
   <body>
 

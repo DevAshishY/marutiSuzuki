@@ -1,6 +1,12 @@
+.menu-toggle {
+    display: none;
+}
+
 /* ====================================================================================================================
  * For large deveice
  * ====================================================================================================================*/
+
+
 
 @media screen and (max-width: 1800px) {
 
@@ -143,9 +149,91 @@
 @media screen and (max-width: 767px) {
 
     /* Header */
-    .main-nav ul {
-        display: none;
+
+
+
+    header {
+        .search-box {
+            align-items: center;
+        }
+
+
+
+        .menu-toggle {
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 22px;
+            cursor: pointer;
+            z-index: 1001;
+            display: block;
+        }
+
+        .menu-toggle span {
+            display: block;
+            height: 4px;
+            background: #2B3393;
+            border-radius: 2px;
+            transition: 0.3s ease;
+            margin-bottom: 4px;
+        }
+
+        /* Toggle Animation */
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+            position: relative;
+            top: -2px;
+        }
+
+        .main-nav {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            height: 100vh;
+            width: 250px;
+            background: #fff;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 80px 20px;
+            gap: 20px;
+            transition: right 0.3s ease;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        /* Open Nav */
+        .main-nav.open {
+            right: 0;
+        }
+
+        /* Vertical List */
+        .main-nav ul {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .main-nav ul li {
+            width: 100%;
+        }
+
+        .main-nav ul li a {
+            display: block;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
     }
+
+
+
 
 
     /* Footer */

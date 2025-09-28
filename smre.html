@@ -26,7 +26,7 @@
             <div class="logo">
               <a href="index.html"><img src="assets/images/logo.png" alt="Logo" width="350" height="39"></a>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" id="mainNav">
               <ul class="flex">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="view-full-manual.html">Chapter</a></li>
@@ -36,7 +36,7 @@
             </nav>
 
             <div class="search-box">
-              <input type="text" placeholder="" id="searchInput">
+              <input type="text" placeholder="">
               <button class="search-btn">
                 <a href="search.html">
                   <svg width="40" height="40" viewBox="0 0 54 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,6 +46,11 @@
                   </svg>
                 </a>
               </button>
+              <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
 
             </div>
 
@@ -516,7 +521,31 @@
     }
 
     typeEffect();
+
+
+
+
+
   </script>
+  <script>
+    // Menu Toggle Logic
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      mainNav.classList.toggle('open');
+    });
+
+    // Close menu when clicking a link (mobile only)
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (window.innerWidth <= 768) {
+          menuToggle.classList.remove('active');
+          mainNav.classList.remove('open');
+        }
+      });
+    });</script>
 
   <body>
 
