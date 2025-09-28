@@ -321,18 +321,19 @@ section#banner {
     &.active .arrow {
         transform: rotate(-135deg);
         -webkit-transform: rotate(-135deg);
-        top: 25px;
+        top: 17px;
     }
 }
 
 .accordion-header {
-    padding: 15px 20px;
+    padding: 10px 20px;
     cursor: pointer;
     font-weight: bold;
     color: #072386;
     transition: all 0.3s ease;
     border-top: 1px solid #ddd;
     position: relative;
+    font-size: 14px;
 
     .arrow {
         border: solid #072386;
@@ -343,7 +344,7 @@ section#banner {
         -webkit-transform: rotate(45deg);
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 11px;
         transition: all ease 0.5s;
 
     }
@@ -577,6 +578,10 @@ section#banner {
 
 
 .accordianFormat {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
     .accordion {
         width: 100%;
@@ -594,9 +599,9 @@ section#banner {
 
     .colCover {
         display: flex;
-        gap: 43px;
+        gap: 10px;
         flex-wrap: wrap;
-        padding: 35px;
+        padding: 10px;
         background: #e5e5e5;
     }
 }
