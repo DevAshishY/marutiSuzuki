@@ -383,14 +383,18 @@ section#banner {
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 370px;
+    max-height: 453px;
 }
 
+.accordion-item.active a.active {
+    font-weight: 700;
+    text-decoration: underline;
+}
 
 /* Chapter Details  */
 
 .chapterDetails {
-    padding-top: 25px;
+    /* padding-top: 25px; */
     /* Breadcrumb */
 
     .breadcrumb {
@@ -458,7 +462,7 @@ section#banner {
 
         img {
             border-radius: 10px;
-            width: 83%;
+            width: 100%;
             height: auto;
 
         }
@@ -835,5 +839,19 @@ section#banner {
 
     img {
         width: 100%;
+    }
+}
+
+
+/* customAcordion */
+
+
+.customAcordion {
+    display: flex;
+    gap: 20px;
+    padding: 42px 20px;
+
+    .leftData {
+        flex-basis: 560px;
     }
 }
