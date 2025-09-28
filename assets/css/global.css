@@ -729,3 +729,111 @@ section#banner {
         display: inline-block;
     }
 }
+
+/* css 19 */
+
+.chapter_overView {
+
+    h3,
+    p {
+        padding: 10px 10px 0px 20px;
+        margin-bottom: 20px;
+        color: #000;
+    }
+}
+
+.roles {
+    background: #0046ad;
+
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.roles_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.roles h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.roles-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.role-card {
+    max-width: 250px;
+    /* text-align: justify; */
+}
+
+.role-card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.role-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Purpose Section */
+.purpose_cover {
+    background: #e5e5e5;
+    /* Gray */
+
+}
+
+.purpose {
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.purpose-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.purpose-card {
+    max-width: 280px;
+}
+
+.purpose-card i {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #0046ad;
+    /* Blue icons */
+}
+
+.purpose-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.purpose-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+.notes p {
+    color: #000;
+    padding-top: 20px;
+}
+
+.overView_img {
+    text-align: center;
+
+    img {
+        width: 100%;
+    }
+}
