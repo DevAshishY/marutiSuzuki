@@ -4,20 +4,9 @@ https://www.figma.com/design/WZHM9p9Pazeacq211aZmL6/marutisuzuki?node-id=0-1&p=f
 
 ## global
 
-All banner height adjest
+menu hover issue
+numbering a,b,c in menu
 
 ## index
 
-1- download pdf
-
 ## chapter-details.html
-
-handle with Accordian
-
-## menu hover issue
-
-## missing
-
-/chapter.html page a section need to add
-
-on header form and about manaual
