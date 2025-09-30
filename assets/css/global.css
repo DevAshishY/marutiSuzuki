@@ -441,8 +441,10 @@ section#banner {
 
 
     h2 {
-        margin-bottom: 45px;
+        margin-bottom: 10px;
         color: #000;
+        font-size: 24px;
+        font-weight: 500;
     }
 
 
@@ -457,7 +459,7 @@ section#banner {
 
         p,
         span {
-            font-size: 20px;
+            font-size: 16px;
             color: #000;
             line-height: 1.5;
             margin-bottom: 20px;
@@ -871,16 +873,120 @@ section#banner {
 
 
 .customAcordion {
+    margin-top: 1px;
+
+    .accordion {
+        width: 100%;
+        background: #072386;
+        padding: 42px 20px;
+
+    }
+
     display: flex;
-    gap: 20px;
-    padding: 42px 20px;
 
     .leftData {
-        flex-basis: 560px;
+        min-width: 315px;
+        background: #072386;
     }
 
     .coverLeft {
         position: sticky;
-        top: 110px;
+        top: 0;
+    }
+
+    .rightData {
+        width: calc(100% - 315px);
+        padding: 30px 20px;
+    }
+}
+
+.wrapper-chapter-details .coverLeft {
+    top: 49px;
+}
+
+.gridCover {
+    display: flex;
+
+    .grid {
+        padding-right: 30px;
+        width: 50%;
+
+        ul {
+            li {
+                display: flex;
+                gap: 15px;
+                margin-bottom: 35px;
+
+                .svgCover {}
+
+                .contentCOver {
+                    h6 {
+                        font-size: 16px;
+                        font-weight: 700;
+                        color: #072386;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .right {
+        border-left: 3px solid #072386;
+        padding-left: 30px;
+        padding-right: 0;
+
+        h3 {
+            font-size: 18px;
+            color: #072386;
+
+            font-size: 700;
+            margin-bottom: 30px;
+        }
+
+        .role-card {
+            max-width: unset;
+            margin-bottom: 60px;
+
+            .customBtn {
+                font-size: 16px;
+                border: 2px solid #072386;
+                padding: 6px;
+                border-radius: 100px;
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                max-width: 328px;
+                color: #072386;
+                font-weight: 700;
+            }
+
+            ul {
+                list-style-type: circle;
+            }
+
+            li {
+                font-size: 14px;
+                color: #000;
+                margin-top: 10px;
+                padding-left: 35px;
+                margin-bottom: 10px;
+            }
+        }
+
+        .note {
+            color: #000;
+            font-size: 14px;
+
+            strong {
+                font-weight: 700;
+                color: #072386;
+            }
+        }
+
     }
 }
