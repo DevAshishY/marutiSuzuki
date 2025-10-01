@@ -7,7 +7,6 @@
 }
 
 .header {
-    padding: 24px 0 14px;
 
     .container {
         max-width: 1865px;
@@ -33,6 +32,9 @@
         }
     }
 
+    nav.main-nav>ul>li {
+        padding: 24px 0 22px;
+    }
 
 }
 
