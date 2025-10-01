@@ -797,7 +797,12 @@ section#banner {
 
 .role-card {
     max-width: 250px;
+
     /* text-align: justify; */
+    &:last-child {
+        margin-bottom: 10px !important;
+    }
+
 }
 
 .role-card i {
@@ -978,15 +983,20 @@ section#banner {
             }
         }
 
-        .note {
-            color: #000;
-            font-size: 14px;
 
-            strong {
-                font-weight: 700;
-                color: #072386;
-            }
-        }
 
+    }
+
+
+}
+
+.note {
+    color: #000;
+    font-size: 14px;
+    margin-top: 30px;
+
+    strong {
+        font-weight: 700;
+        color: #072386;
     }
 }
