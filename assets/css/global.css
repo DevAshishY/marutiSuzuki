@@ -122,7 +122,7 @@ section#banner {
         }
     }
 
-    background: #072386;
+    /* background: #072386; */
 
 
 
@@ -262,7 +262,7 @@ section#banner {
 }
 
 .blueBg {
-    background: #072386;
+    /* background: #072386; */
 }
 
 .grayBg {
@@ -323,7 +323,7 @@ section#banner {
 }
 
 .accordion-item {
-    background: #f8f8f8;
+    background: #eaeaea;
     border-radius: 10px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -438,6 +438,8 @@ section#banner {
             font-size: 27px;
         }
     }
+
+    font-size: 30px;
 
 
     h2 {
@@ -999,4 +1001,12 @@ section#banner {
         font-weight: 700;
         color: #072386;
     }
+}
+
+
+h2.chapter-title {
+    color: black;
+    padding-top: 35px;
+    padding-left: 51px;
+    font-size: 30px;
 }
